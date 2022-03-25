@@ -51,7 +51,8 @@ add_message_files(
   FILES
   IRCameraTemperatureInfo.msg
   Telemetry.msg
-  Odom.msg
+  Battery.msg
+  Odometry.msg
 )
 
 ## Generate services in the 'srv' folder
