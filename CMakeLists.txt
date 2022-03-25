@@ -10,6 +10,7 @@ project(gara_messages)
 find_package(catkin REQUIRED COMPONENTS
   std_msgs
   message_generation
+  geometry_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -50,6 +51,7 @@ add_message_files(
   FILES
   IRCameraTemperatureInfo.msg
   Telemetry.msg
+  Odom.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -69,7 +71,7 @@ add_message_files(
 ## Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
-    std_msgs
+    std_msgs geometry_msgs
 )
 
 ################################################
