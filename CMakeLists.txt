@@ -53,6 +53,7 @@ add_message_files(
   Telemetry.msg
   Battery.msg
   Odometry.msg
+  TemperatureScale.msg
 )
 
 ## Generate services in the 'srv' folder
